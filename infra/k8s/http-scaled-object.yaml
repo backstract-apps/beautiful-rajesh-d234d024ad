@@ -1,0 +1,24 @@
+kind: HTTPScaledObject
+apiVersion: http.keda.sh/v1alpha1
+metadata:
+  name: beautiful-rajesh-d234d024ad-scaler
+  namespace: apps-release
+spec:
+  hosts:
+    - cc1fbde45ead-in-south-01.mayson.dev
+  pathPrefixes:
+    - /ap-northeast-2-backstractelb-a3fd21-coll-3c7d4514aab14347899c7e86a17f1441/ # e.g. /infallible-naveen-... beautiful-rajesh-d234d024ad/
+  scaleTargetRef:
+    name: beautiful-rajesh-d234d024ad-depl
+    kind: Deployment
+    apiVersion: apps/v1
+    service: beautiful-rajesh-d234d024ad-srv # e.g. coll-8a2a...-srv
+    port: 80
+  replicas:
+    min: 0
+    max: 10
+  scaledownPeriod: 300 # 5 min
+  scalingMetric:
+    requestRate:
+      targetValue: 100
+      window: 1m
