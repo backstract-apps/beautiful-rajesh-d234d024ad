@@ -2,7 +2,7 @@ kind: HTTPScaledObject
 apiVersion: http.keda.sh/v1alpha1
 metadata:
   name: beautiful-rajesh-d234d024ad-scaler
-  namespace: scaler-keda
+  namespace: keda-test
 spec:
   hosts:
     - cc1fbde45ead-in-south-01.mayson.dev
