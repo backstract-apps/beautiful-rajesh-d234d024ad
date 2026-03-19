@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: alloy-configmap
-  namespace: apps-release
+  namespace: scaler-keda
 data:
   alloy.river: |
     logging {
