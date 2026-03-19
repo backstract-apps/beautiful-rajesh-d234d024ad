@@ -7,7 +7,7 @@ spec:
   hosts:
     - cc1fbde45ead-in-south-01.mayson.dev
   pathPrefixes:
-    - /ap-northeast-2-backstractelb-a3fd21-coll-3c7d4514aab14347899c7e86a17f1441/ # e.g. /infallible-naveen-... beautiful-rajesh-d234d024ad/
+    - /ap-northeast-2-backstractelb-a3fd21-coll-3c7d4514aab14347899c7e86a17f1441 # e.g. /infallible-naveen-... beautiful-rajesh-d234d024ad/
   scaleTargetRef:
     name: beautiful-rajesh-d234d024ad-depl
     kind: Deployment
