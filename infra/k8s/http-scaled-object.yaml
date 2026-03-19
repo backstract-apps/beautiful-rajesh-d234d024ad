@@ -15,7 +15,7 @@ spec:
     service: beautiful-rajesh-d234d024ad-srv # e.g. coll-8a2a...-srv
     port: 80
   replicas:
-    min: 0
+    min: 1
     max: 10
   scaledownPeriod: 300 # 5 min
   scalingMetric:
