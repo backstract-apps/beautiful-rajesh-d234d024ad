@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: beautiful-rajesh-d234d024ad-bst-token
-  namespace: scaler-keda
+  namespace: keda-test
   labels:
     app: beautiful-rajesh-d234d024ad
     managed-by: backstract
@@ -17,7 +17,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: beautiful-rajesh-d234d024ad-depl
-  namespace: scaler-keda
+  namespace: keda-test
   labels:
     app: beautiful-rajesh-d234d024ad
     release: prometheus # Added label for PodMonitor discovery
