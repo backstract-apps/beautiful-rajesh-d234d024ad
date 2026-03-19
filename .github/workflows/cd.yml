@@ -12,7 +12,7 @@ jobs:
     env:
       AWS_REGION: ap-south-1
       EKS_CLUSTER: backstract-dev
-      NAMESPACE: scaler-keda
+      NAMESPACE: keda-test
 
     steps:
     - name: Check out code
